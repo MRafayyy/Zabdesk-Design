@@ -27,7 +27,8 @@ body{
     height: 100%;
     background-image: url('library.jpg');
     background-repeat: no-repeat;
-       background-attachment: fixed;
+/*        background-attachment: fixed; */
+    position:fixed;
 
 /*     background-position: left; */
     top: 0%;

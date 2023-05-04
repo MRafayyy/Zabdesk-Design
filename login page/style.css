@@ -144,11 +144,19 @@ input[type="password"]{
     padding: 4%;
 
 }
-
+/* 
 ol{
     list-style: none;
     text-align: left;
     margin-left: 7%;
+} */
+
+ol {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin-left: 0%;
+    padding: 0;
 }
 
 

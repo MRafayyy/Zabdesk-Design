@@ -26,16 +26,15 @@ body{
     height: 100%;
     background-image: url('library.jpg');
     background-repeat: no-repeat;
-/*     background-size: 331% 100%; */
+
     background-attachment: fixed;
-    top: 0%;
-    right: 0%;
-    background-position: center right;
+ 
+    background-position: left;
     top: 0%;
     right: 0%;
     z-index: -1;
-    opacity: 0.3;
-    opacity: 0.7;
+   
+    opacity: 0.5;
     filter: blur(1px);
 }
 

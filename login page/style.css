@@ -26,7 +26,7 @@ body{
     height: 100%;
     background-image: url('library.jpg');
     background-repeat: no-repeat;
-    background-size: 331% 100%;
+/*     background-size: 331% 100%; */
     background-attachment: fixed;
     top: 0%;
     right: 0%;

@@ -1,0 +1,743 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --logo-color: #2051a2;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* color: #ffffff; */
+    color: #003f6c;
+    /* background-color: #c9c9c9; */
+    background-color: white;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+
+/*------------------------------------------------ Navigation and Hamburger and SideMenu (start)------------------------------------------------ */
+
+
+header {
+    width: 100%;
+    height: auto;
+    /* margin-top: 2%; */
+}
+
+header img {
+    width: 10%;
+    width: 143px;
+    display: block;
+    margin: auto;
+
+    padding-top: 1%;
+}
+
+.navigation {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+    /* list-style: none; */
+}
+
+.navigation li {
+    list-style: none;
+    /* font-size: 2rem; */
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.side-menu {
+    display: none;
+    transition: 0s all;
+}
+
+.side-menu-open {
+    display: none;
+    transition: 0s all;
+}
+
+.side-menu {
+    display: none;
+}
+
+
+
+
+
+
+.nav-li {
+    position: relative;
+    padding: 2% 0%;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.DropDownMenu {
+    width: 222px;
+    padding-top: 38px;
+    gap: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    position: absolute;
+    top: 72px;
+    padding: 0px;
+    left: -65px;
+    color: black;
+    overflow: hidden;
+    height: 0px;
+    transition: 0.5s all;
+}
+
+#DropDownMenu_1{
+    left: -77px;
+}
+#DropDownMenu_2{
+    left: -56px;
+}
+#DropDownMenu_3{
+    left: -83px;
+}
+#DropDownMenu_4{
+    left: -65px;
+}
+
+
+.nav-li:nth-child(2):hover .DropDownMenu {
+    padding: 21px;
+    height: 384px;
+}
+.nav-li:nth-child(3):hover .DropDownMenu {
+    padding: 21px;
+    height: 276px;
+}
+.nav-li:nth-child(4):hover .DropDownMenu {
+    padding: 21px;
+    height: 120px;
+}
+.nav-li:nth-child(5):hover .DropDownMenu {
+    padding: 21px;
+    height: 227px;
+}
+
+
+.DDM:hover {
+    color: #009bf5;
+    cursor: pointer;
+   
+}
+
+/*------------------------------------------------ Navigation and Hamburger and SideMenu (end)------------------------------------------------ */
+
+
+
+.forms {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 7%;
+}
+
+.purpose {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.info {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.info span{
+    display: flex;
+    justify-content: center;
+    min-width: 51%;
+    align-items: center;
+    gap: 0rem;
+    width: 670px;
+}
+
+.info span span {
+
+    display: inline-block;
+    padding: 1% 3%;
+    border: 1px solid black;
+    margin: 0;
+
+}
+
+.info span span:nth-of-type(odd) {
+    font-weight: 800;
+}
+
+
+.top-headings{
+    background-color: var(--logo-color);
+    color: white;
+    font-weight: 800;
+}
+
+.out{
+    outline: 1px solid var(--logo-color);
+}
+
+.fw{
+    font-weight: 800;
+    
+}
+
+
+.request-status-heading{
+    text-align: center;
+    padding: 2%;
+}
+
+.request-status{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.request-status span{
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    padding: 1% 1%;
+}
+
+.request-status span:nth-child(4){
+    width: 35%;
+}
+
+
+
+
+.wish{
+    text-align: start;
+    font-weight: 800;
+}
+
+
+
+
+.form-content-container {
+    background-color: rgb(255 255 255);
+    border: 1px solid #2b4da1;
+    margin-top: 5%;
+}
+
+
+.listed-courses-items{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 1% 1%;
+    font-weight: 800;
+}
+.listed-courses{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.listed-courses .listed-courses-items:nth-child(1){
+/* .form-content-container div span:nth-child(1){ */
+    width: 13%;
+}
+.listed-courses .listed-courses-items:nth-child(2){
+/* .form-content-container div span:nth-child(2){ */
+    width: 60%;
+}
+.listed-courses .listed-courses-items:nth-child(3){
+/* .form-content-container div span:nth-child(3){ */
+    width: 13%;
+}
+.listed-courses .listed-courses-items:nth-child(4){
+/* .form-content-container div span:nth-child(4){ */
+    width: 13%;
+}
+
+
+.form-content-container div:last-child{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.form-content-container div:last-child span:nth-child(1){
+    width: 13%;
+    text-align: center;
+}
+.form-content-container div:last-child span:nth-child(2){
+   width: 60%;
+}
+.form-content-container div:last-child span:nth-child(2) input{
+    width: 100%;
+    padding: 0%;
+    height: 55px;
+}
+
+
+
+
+
+
+
+
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: row;
+    margin-top: 1%;
+    /* background-color: var(--logo-color); */
+}
+
+.btn-container button {
+    width: 8%;
+    width: 100px;
+    padding: 1% 1%;
+    margin: 1%;
+    border: 2px solid var(--logo-color);
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------- Footer (start)------------------------------------------------ */
+
+footer {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+}
+
+footer h4 {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    word-spacing: 2px;
+}
+
+
+/*-------------------------------------------------------- Footer (end)------------------------------------------------ */
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+
+
+    /*------------------------------------------------ Navigation and Hamburger and SideMenu (start)------------------------------------------------ */
+    .navigation {
+        display: none;
+    }
+
+    .hamburger {
+        position: absolute;
+        /* position: fixed; */
+        top: 96px;
+        top: 66px;
+        right: 15px;
+        z-index: 2;
+    }
+
+
+
+    .patty {
+        background-color: rgb(0, 0, 0);
+        width: 3vw;
+        width: 40px;
+        height: 0.7vh;
+        height: 5px;
+        margin: 7px;
+    }
+
+    .change_color {
+        background-color: white;
+    }
+
+
+    .turn1 {
+        rotate: 45deg;
+        margin-bottom: -9%;
+        margin-top: 33%;
+    }
+
+    .turn2 {
+        rotate: -45deg;
+        margin-top: 0px;
+    }
+
+    .turn3 {
+        display: none;
+    }
+
+
+    .side-menu {
+        width: 25%;
+        width: 308px;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 5%;
+        margin-left: 0;
+        padding-left: 0;
+        right: 0;
+        list-style: none;
+        gap: 3rem;
+        margin-top: 0;
+        z-index: 1;
+        margin-right: -41%;
+        background-color: #003f6c;
+        transition: 1s all;
+        color: #ffffff;
+        padding-top: 110px;
+        overflow: auto;
+
+    }
+
+    .side-menu-open {
+        margin-right: 0%;
+        transition: 1s all;
+
+    }
+
+
+    .side-menu-li {
+        position: relative;
+        padding: 2% 0%;
+        cursor: pointer;
+        transition: 0.5s all;
+    }
+
+
+    .DropDownMenus {
+        /* width: 193px; */
+        width: 218px;
+        padding-top: 38px;
+        gap: 2rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        list-style: none;
+        position: absolute;
+        top: 72px;
+        padding: 0px;
+        left: -65px;
+        color: black;
+       
+        overflow: hidden;
+        height: 0px;
+        transition: 0.5s all;
+    } 
+
+
+    #DropDownMenus_1{
+        left: -77px;
+    }
+    #DropDownMenus_2{
+        left: -56px;
+    }
+    #DropDownMenus_3{
+        left: -83px;
+    }
+    #DropDownMenus_4{
+        left: -65px;
+    }
+
+
+
+
+    /* .side-menu-li:hover .DropDownMenu {
+        padding: 21px;
+        height: 327px;
+        z-index: 10;
+    
+    } */
+
+    .hello{
+        padding: 21px;
+        height: 380px;
+        z-index: 10;  
+    }
+
+    .hello_0 {
+        padding: 21px;
+        height: 380px;
+        z-index: 10;
+    }
+    .hello_1 {
+        padding: 21px;
+        height: 217px;
+        z-index: 10;
+    }
+    .hello_2 {
+        padding: 21px;
+        height: 116px;
+        z-index: 10;
+    }
+    .hello_3 {
+        padding: 21px;
+        height: 223px;
+        z-index: 10;
+    }
+    
+  
+    
+    .DDM:hover {
+        color: #009bf5;
+        cursor: pointer;
+       
+    }
+    
+
+    /*---------------------------------------------- Navigation and Hamburger and SideMenu (end)------------------------------------------ */
+
+    .info span {
+        padding: 1% 1.5%;
+    }
+
+    .request-status span{
+        padding: 1% 0%;
+        font-size: 0.9rem;
+        width: 10%;
+    }
+
+    .listed-courses-items{
+        font-size: 0.9rem;
+    }
+
+    .request-status span:nth-child(4) {
+        width: 46%;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    /*------------------------------------------------ Navigation and Hamburger and SideMenu (start)------------------------------------------------ */
+    .side-menu {
+        width: 40%;
+        width: 308px;
+        width: 269px;
+        margin-right: -56%;
+        padding-top: 110px;
+    }
+
+    .side-menu-open {
+        margin-right: 0%;
+    }
+
+    /*---------------------------------------------- Navigation and Hamburger and SideMenu (end)------------------------------------------ */
+
+
+    .info span {
+        font-size: 0.6rem;
+        width: 416px;
+    }
+
+
+    header {
+        margin-top: 2%;
+        height: 10vh;
+    }
+
+    .purpose{
+        margin-top: 25%;
+    }
+
+    .request-status-heading {
+        font-size: 0.8rem;
+    }
+    
+    .request-status{
+        align-items: center;
+    }
+
+    .request-status span {
+        width: 14%;
+        font-size: 0.8rem;
+    }
+    .request-status span:nth-child(4) {
+        width: 47%;
+    }
+
+    .wish {
+        text-align: center;
+        margin-top: 6%;
+    }
+
+    .listed-courses{
+        align-items: center;
+    }
+
+    .listed-courses-items {
+        font-size: 0.8rem;
+    }
+
+    .listed-courses .listed-courses-items:nth-child(2) {
+        width: 58%;
+    }
+
+
+    .form-content-container {
+        margin-top: 9%;
+    }
+
+    .form-content-container div:last-child span:nth-child(1) {
+        font-size: 0.8rem;
+    }
+    .form-content-container div:last-child span:nth-child(2) input {
+        height: 37px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+
+    /*---------------------------------------- Navigation and Hamburger and SideMenu and Footer (start)------------------------------------------------ */
+
+    .side-menu {
+        width: 100%;
+        margin-right: -100%;
+    }
+
+    .side-menu-open {
+        margin-right: 0%;
+    }
+
+
+
+
+    .hamburger {
+        top: 21px;
+        position: absolute;
+    }
+
+    header img {
+        padding-top: 87px;
+    }
+
+
+
+
+
+    footer h4 {
+        font-size: clamp(0.1rem, 2.1vw + 0.2rem, 7rem);
+    }
+
+    /*---------------------------------------------- Navigation and Hamburger and SideMenu and Footer(end)------------------------------------------ */
+
+
+
+    .info span {
+        font-size: clamp(0.1rem, 1vw + 0.3rem, 0.7rem);
+            padding: 1% 0.3%;
+            width: 321px;
+    }
+
+.purpose{
+    font-size: 1.3rem;
+    margin-top: 36%;
+}
+
+    .request-status-heading {
+        font-size: 0.8rem;
+        font-size: clamp(0.1rem, 0.1rem + 2vw, 0.8rem);
+    }
+    .request-status span {
+        
+        font-size: 0.8rem;
+        font-size: clamp(0.1rem, 0.1rem + 2vw, 0.8rem);
+    }
+    
+    .listed-courses-items {
+        font-size: 0.8rem;
+        font-size: clamp(0.1rem, 0.1rem + 2vw, 0.8rem);
+    }
+    
+    .form-content-container div:last-child span:nth-child(1) {
+        font-size: 0.8rem;
+        font-size: clamp(0.1rem, 0.1rem + 2vw, 0.8rem);
+    }
+    
+    .wish{
+        font-size: 0.8rem;
+
+    }
+
+    .btn-container {
+        gap: 1rem;
+    }
+
+    .btn-container button{
+        width: 8%;
+        width: 72px;
+        padding: 1% 1%;
+        margin: 3% 1%;
+        border: 1px solid var(--logo-color);
+        font-size: 0.7rem;
+    }
+
+}

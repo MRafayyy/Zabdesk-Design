@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <header> <img src="szabist logo.png" alt=""> </header>
+
+
+        <div class="hamburger" onclick="change()">
+            <div class="patty"></div>
+            <div class="patty"></div>
+            <div class="patty"></div>
+        </div>
+
+        <div class="side">
+            <ul class="side-menu">
+
+                <li id="option-1">Home</li>
+
+                <li class="side-menu-li" id="option-2">Courses
+                    <ul class="DropDownMenus" id="DropDownMenus_1">
+                        <li class="DDM"><a href="#"> Course Registration </a></li>
+                        <li class="DDM"><a href="#"> Current Semester </a></li>
+                        <li class="DDM"><a href="#"> Previous Semester </a></li>
+                        <li class="DDM"><a href="#"> Printing Report </a></li>
+                        <li class="DDM"><a href="../Course-Withdrawal-page/index.html"> Course withdrawal </a></li>
+                        <li class="DDM"><a href="#"> Course Improvement </a></li>
+                        <li class="DDM"><a href="#"> Semester Result </a></li>
+                    </ul>
+                </li>
+
+                <li class="side-menu-li" id="option-3 "> Class Schedule
+                    <ul class="DropDownMenus" id="DropDownMenus_2">
+                        <li class="DDM"><a href="#"> Current Week Schedule </a></li>
+                        <li class="DDM"><a href="#"> Advance Week Schedule </a></li>
+                        <li class="DDM"><a href="#"> Class Schedule </a></li>
+                        <li class="DDM"><a href="#"> Exam Schedule </a></li>
+                        <li class="DDM"><a href="#"> Daily Class Schedule </a></li>
+                       
+                    </ul>
+                </li>
+
+                <li class="side-menu-li" id="option-4">Library
+                    <ul class="DropDownMenus" id="DropDownMenus_3">
+                        <li class="DDM"><a href="#"> Library Books Issued</a></li>
+                        <li class="DDM"><a href="#"> Library Card Request </a></li>
+                     
+                    </ul>
+                </li>
+
+                <li class="side-menu-li" id="option-5">My Account
+                    <ul class="DropDownMenus" id="DropDownMenus_4">
+                        <li class="DDM"><a href="#"> Change Password </a></li>
+                        <li class="DDM"><a href="#"> Profile Documents</a></li>
+                        <li class="DDM"><a href="#"> ID Card Request </a></li>
+                        <li class="DDM"><a href="#"> Change Profile Request </a></li>
+                    </ul>
+                </li>
+
+                <li id="option-6"><a href="../login page/index.html"> Log out</a></li>
+
+            </ul>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li id="li-1"><a href="#">Home</a> </li>
+
+                <li class="nav-li" class="nav-li" id="li-2"><a href="#">Courses</a>
+                    <ul class="DropDownMenu" id="DropDownMenu_1">
+                        <li class="DDM"><a href="#"> Course Registration </a></li>
+                        <li class="DDM"><a href="#"> Current Semester </a></li>
+                        <li class="DDM"><a href="#"> Previous Semester </a></li>
+                        <li class="DDM"><a href="#"> Printing Report </a></li>
+                        <li class="DDM"><a href="../Course-Withdrawal-page/index.html"> Course withdrawal </a></li>
+                        <li class="DDM"><a href="#"> Course Improvement </a></li>
+                        <li class="DDM"><a href="#"> Semester Result </a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-li" id="li-3"> <a href="#">Class&nbsp;Schedule</a>
+                    <ul class="DropDownMenu" id="DropDownMenu_2">
+                        <li class="DDM"><a href="#"> Current Week Schedule </a></li>
+                        <li class="DDM"><a href="#"> Advance Week Schedule </a></li>
+                        <li class="DDM"><a href="#"> Class Schedule </a></li>
+                        <li class="DDM"><a href="#"> Exam Schedule </a></li>
+                        <li class="DDM"><a href="#"> Daily Class Schedule </a></li>
+                       
+                    </ul>
+                </li>
+
+                <li class="nav-li" id="li-4"><a href="#">Library</a>
+                    <ul class="DropDownMenu" id="DropDownMenu_3">
+                        <li class="DDM"><a href="#"> Library Books Issued</a></li>
+                        <li class="DDM"><a href="#"> Library Card Request </a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-li" id="li-5"> <a href="#">My Account</a>
+                    <ul class="DropDownMenu" id="DropDownMenu_4">
+                        <li class="DDM"><a href="#"> Change Password </a></li>
+                        <li class="DDM"><a href="#"> Profile Documents</a></li>
+                        <li class="DDM"><a href="#"> ID Card Request </a></li>
+                        <li class="DDM"><a href="#"> Change Profile Request </a></li>
+                    
+                    </ul>
+                </li>
+
+                <li id="li-6"> <a href="../login page/index.html"> Log out</a> </li>
+            </ul>
+            </ul>
+        </nav>
+
+<!-- ----------------------------------(start)---------------------------------->
+<!-- (Write your code here) -->
+
+<form class="forms" action="#">
+
+    <h5 class="purpose">	Request for change of profile</h5>
+    <div class="info"> 
+        <span class="student">   
+            <span>Student</span>
+            <span>	 Muhammad Rafay Aziz - 2012354 </span>
+        </span>
+        <span class="section">  
+            <span>Section</span>
+            <span> BCS/BS 6 F</span>
+        </span>
+        <span class="semester">
+            <span>Semester</span>
+            <span>	 Spring 2023 </span>
+        </span>
+    </div>
+
+    <div class="form-content-container">
+
+    
+
+    <div>
+        <label for="">Registration Number</label>
+        <input id="" type="text" disabled value="2012389">
+    </div>
+    <div>
+        <label for="">First Name      </label>
+        <input id="" type="text" value="John" disabled>
+    </div>
+    <div>
+        <label for="">Middle Name</label>
+        <input id="" type="text" value="Bradshaw" disabled>
+    </div>
+    <div>
+        <label for="">Last Name</label>
+        <input id="" type="text" value="Layfield" disabled>
+    </div>
+    <div>
+        <label for="">Father's Name</label>
+        <input id="" type="text" value=" Mathew Bradshaw Layfield" disabled>
+    </div>
+    <div>
+        <label for="">Date of Birth</label>
+        <input id="" type="date" value="03/09/2002" disabled >
+    </div>
+    <div>
+        <label for="">NIC</label>
+        <input id="" type="text" value="42354-243436745336  "  disabled>
+    </div>
+    <div>
+        <label for="">Gender</label>
+        <input id="" type="text" value="Male"   disabled>
+    </div>
+    <div>
+        <label for="">Blood Group</label>
+        <!-- <input id="" type=""> -->
+        <select name="" id="">
+            <option value="">A+</option>
+            <option value="">A-</option>
+            <option value="">B+</option>
+            <option value="">B-</option>
+            <option value="">O+</option>
+            <option value="">O-</option>
+            <option value="">AB+</option>
+            <option value="">AB-</option>
+            <option value="">NA</option>
+        </select>
+    </div>
+    <div>
+        <label for="">Father's Occupation</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Father's Organization</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Father's Organization Phone 1</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Father's Organization Phone 2</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Mailing Address</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Mailing Address Postal Code</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Mailing Address City</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Mailing Address Country</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Offie Phone 1</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Offie Phone 2</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Home Phone</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Mobile</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Email</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Permanent Address</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Permanent Address Postal Code</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Permanent Address City</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Permanent Address Country</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Passport Number</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Passport Issue Date</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Passport Issue Place</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Emergnecy Contact Name</label>
+        <input id="" type="text" value="">
+    </div>
+    <div>
+        <label for="">Emergency Contact No.</label>
+        <input id="" type="text">
+    </div>
+    <div>
+        <label for="">Academic Award</label>
+        <input id="" type="text" disabled>
+    </div>
+    <div>
+        <label for="">Extra Curricular Activity</label>
+        <input id="" type="text" disabled>
+    </div>
+
+</div>
+
+<div class="btn-container">
+    <button type="submit"> Submit</button>
+    <button type="reset"> Reset</button>
+</div>
+   
+
+
+
+</form>
+
+
+
+
+<!-- -------------------------- (end)-------------------------- -->
+
+
+<footer>
+            <h4>Copyright © 2023 <span>ZABSolutions</span> All Rights Reserved</h4>
+        </footer>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+

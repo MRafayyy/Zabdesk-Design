@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <header> <img src="szabist logo.png" alt=""> </header>
+
+
+        <div class="hamburger" onclick="change()">
+            <div class="patty"></div>
+            <div class="patty"></div>
+            <div class="patty"></div>
+        </div>
+
+        <div class="side">
+            <ul class="side-menu">
+
+                <li id="option-1"> <a href="../Home-page/index.html">Home</a></li>
+
+                <li class="side-menu-li" id="option-2">Courses
+                    <ul class="DropDownMenus" id="DropDownMenus_1">
+                        <li class="DDM"><a href="#"> Course Registration </a></li>
+                        <li class="DDM"><a href="#"> Current Semester </a></li>
+                        <li class="DDM"><a href="#"> Previous Semester </a></li>
+                        <li class="DDM"><a href="#"> Printing Report </a></li>
+                        <li class="DDM"><a href="../Course-Withdrawal-page/index.html"> Course withdrawal </a></li>
+                        <li class="DDM"><a href="#"> Course Improvement </a></li>
+                        <li class="DDM"><a href="#"> Semester Result </a></li>
+                    </ul>
+                </li>
+
+                <li class="side-menu-li" id="option-3 "> Class Schedule
+                    <ul class="DropDownMenus" id="DropDownMenus_2">
+                        <li class="DDM"><a href="#"> Current Week Schedule </a></li>
+                        <li class="DDM"><a href="#"> Advance Week Schedule </a></li>
+                        <li class="DDM"><a href="#"> Class Schedule </a></li>
+                        <li class="DDM"><a href="#"> Exam Schedule </a></li>
+                        <li class="DDM"><a href="#"> Daily Class Schedule </a></li>
+
+                    </ul>
+                </li>
+
+                <li class="side-menu-li" id="option-4">Library
+                    <ul class="DropDownMenus" id="DropDownMenus_3">
+                        <li class="DDM"><a href="#"> Library Books Issued</a></li>
+                        <li class="DDM"><a href="#"> Library Card Request </a></li>
+
+                    </ul>
+                </li>
+
+                <li class="side-menu-li" id="option-5">My Account
+                    <ul class="DropDownMenus" id="DropDownMenus_4">
+                        <li class="DDM"><a href="#"> Change Password </a></li>
+                        <li class="DDM"><a href="#"> Profile Documents</a></li>
+                        <li class="DDM"><a href="#"> ID Card Request </a></li>
+                        <li class="DDM"><a href="#"> Change Profile Request </a></li>
+                    </ul>
+                </li>
+
+                <li id="option-6"><a href="../login page/index.html"> Log out</a></li>
+
+            </ul>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li id="li-1"><a href="../Home-page/index.html">Home</a> </li>
+
+                <li class="nav-li" class="nav-li" id="li-2"><a href="#">Courses</a>
+                    <ul class="DropDownMenu" id="DropDownMenu_1">
+                        <li class="DDM"><a href="#"> Course Registration </a></li>
+                        <li class="DDM"><a href="#"> Current Semester </a></li>
+                        <li class="DDM"><a href="#"> Previous Semester </a></li>
+                        <li class="DDM"><a href="#"> Printing Report </a></li>
+                        <li class="DDM"><a href="../Course-Withdrawal-page/index.html"> Course withdrawal </a></li>
+                        <li class="DDM"><a href="#"> Course Improvement </a></li>
+                        <li class="DDM"><a href="#"> Semester Result </a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-li" id="li-3"> <a href="#">Class&nbsp;Schedule</a>
+                    <ul class="DropDownMenu" id="DropDownMenu_2">
+                        <li class="DDM"><a href="#"> Current Week Schedule </a></li>
+                        <li class="DDM"><a href="#"> Advance Week Schedule </a></li>
+                        <li class="DDM"><a href="#"> Class Schedule </a></li>
+                        <li class="DDM"><a href="#"> Exam Schedule </a></li>
+                        <li class="DDM"><a href="#"> Daily Class Schedule </a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-li" id="li-4"><a href="#">Library</a>
+                    <ul class="DropDownMenu" id="DropDownMenu_3">
+                        <li class="DDM"><a href="#"> Library Books Issued</a></li>
+                        <li class="DDM"><a href="#"> Library Card Request </a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-li" id="li-5"> <a href="#">My Account</a>
+                    <ul class="DropDownMenu" id="DropDownMenu_4">
+                        <li class="DDM"><a href="#"> Change Password </a></li>
+                        <li class="DDM"><a href="#"> Profile Documents</a></li>
+                        <li class="DDM"><a href="#"> ID Card Request </a></li>
+                        <li class="DDM"><a href="#"> Change Profile Request </a></li>
+
+                    </ul>
+                </li>
+
+                <li id="li-6"> <a href="../login page/index.html"> Log out</a> </li>
+            </ul>
+            </ul>
+        </nav>
+
+        <!-- ----------------------------------(start)---------------------------------->
+        <!-- (Write your code here) -->
+
+        <form class="forms" action="#">
+
+            <h5 class="purpose"> Course Withdrawal Form</h5>
+            <div class="info">
+                <span class="student">
+                    <span>Student</span>
+                    <span> Muhammad Rafay Aziz - 2012354 </span>
+                </span>
+                <span class="section">
+                    <span>Section</span>
+                    <span> BCS/BS 6 F</span>
+                </span>
+                <span class="semester">
+                    <span>Semester</span>
+                    <span> Spring 2023 </span>
+                </span>
+            </div>
+
+
+            <div class="request-status-heading top-headings" >Course Withdrawal Request Status</div>
+
+            <div class="request-status top-headings">
+                <span>S.No.</span>
+                <span>Request Id</span>
+                <span>Course No.</span>
+                <span>Course Name</span>
+                <span>With Class</span>
+                <span>Status</span>
+            </div>
+
+            <div class="request-status-of-courses ">
+                <span class="SNo"></span>
+                <span class="RId"> </span>
+                <span class="CNo"> </span>
+                <span class="CName"> </span>
+                <span class="WClass"></span>
+                <span class="St"></span>
+            </div>
+
+            <div class="request-status-of-courses ">
+                <span class="SNo"></span>
+                <span class="RId"> </span>
+                <span class="CNo"> </span>
+                <span class="CName"> </span>
+                <span class="WClass"></span>
+                <span class="St"></span>
+            </div>
+
+            <div class="request-status-of-courses ">
+                <span class="SNo"></span>
+                <span class="RId"> </span>
+                <span class="CNo"> </span>
+                <span class="CName"> </span>
+                <span class="WClass"></span>
+                <span class="St"></span>
+            </div>
+
+            <div class="request-status-of-courses ">
+                <span class="SNo"></span>
+                <span class="RId"> </span>
+                <span class="CNo"> </span>
+                <span class="CName"> </span>
+                <span class="WClass"></span>
+                <span class="St"></span>
+            </div>
+
+            <div class="request-status-of-courses ">
+                <span class="SNo"></span>
+                <span class="RId"> </span>
+                <span class="CNo"> </span>
+                <span class="CName"> </span>
+                <span class="WClass"></span>
+                <span class="St"></span>
+            </div>
+
+            <div class="request-status-of-courses ">
+                <span class="SNo"></span>
+                <span class="RId"> </span>
+                <span class="CNo"> </span>
+                <span class="CName"> </span>
+                <span class="WClass"></span>
+                <span class="St"></span>
+            </div>
+
+            <div class="request-status-of-courses ">
+                <span class="SNo"></span>
+                <span class="RId"> </span>
+                <span class="CNo"> </span>
+                <span class="CName"> </span>
+                <span class="WClass"></span>
+                <span class="St"></span>
+            </div>
+
+
+
+
+
+            <h3 class="wish">I wish to withdraw from the following courses:</h3>
+
+            <div  class="new-rows">
+                <span class=" first-col"></span>
+                <span class=" second-col" ></span>
+                <span class="  third-col"> </span>
+                <!-- <span class=" fourth-col"> <input class="tick" type="checkbox"></span> -->
+            </div>
+
+            <div  class="new-rows">
+                <span class=" first-col"></span>
+                <span class=" second-col" ></span>
+                <span class=" third-col"> </span>
+                <!-- <span class=" fourth-col"> <input class="tick" type="checkbox"></span> -->
+            </div>
+
+            <div  class="new-rows">
+                <span class=" first-col"></span>
+                <span class=" second-col" ></span>
+                <span class="third-col"> </span>
+                <!-- <span class="fourth-col "> <input class="tick" type="checkbox"></span> -->
+            </div>
+
+            <div  class=" new-rows">
+                <span class=" first-col"></span>
+                <span class=" second-col" ></span>
+                <span class=" third-col"> </span>
+                <!-- <span class=" fourth-col"> <input class="tick" type="checkbox"></span> -->
+            </div>
+
+            <div  class=" new-rows">
+                <span class="  first-col"></span>
+                <span class="  second-col" ></span>
+                <span class="  third-col"> </span>
+                <!-- <span class="fourth-col"> <input class="tick" type="checkbox"></span> -->
+            </div>
+
+            <div  class=" new-rows">
+                <span class="  first-col"></span>
+                <span class=" second-col" ></span>
+                <span class=" third-col"> </span>
+                <!-- <span class="  fourth-col"> <input class="tick" type="checkbox"></span> -->
+            </div>
+
+            <div  class=" new-rows">
+                <span class=" first-col"></span>
+                <span class=" second-col " ></span>
+                <span class="third-col"> </span>
+                <!-- <span class=" fourth-col "> <input class="tick" type="checkbox"></span> -->
+            </div>
+
+
+
+
+
+
+            <div class="form-content-container">
+
+                <div class="listed-courses top-headings">
+                    <span class="listed-courses-items">Course No.</span>
+                    <span class="listed-courses-items">Course Name</span>
+                    <span class="listed-courses-items">Credit Hours</span>
+                    <span class="listed-courses-items"> Withdraw   </span>
+                </div>
+
+                <div class="listed-courses">
+                    <span class="listed-courses-items course-number">1</span>
+                    <span class="listed-courses-items course-name">	CSC1205 Technical and Business Writing</span>
+                    <span class="listed-courses-items credit-hours">3-0 </span>
+                    <span class="listed-courses-items tick-container"> <input class="tick" type="checkbox">
+                    </span>
+                </div>
+
+                <div  class="listed-courses">
+                    <span class="listed-courses-items course-number">2</span>
+                    <span class="listed-courses-items course-name">	CSC3205 Computer Networks and Data Communications</span>
+                    <span class="listed-courses-items credit-hours">3-0 </span>
+                    <span class="listed-courses-items tick-container"> <input class="tick" type="checkbox">
+                    </span>
+                </div>
+
+                <div  class="listed-courses">
+                    <span class="listed-courses-items course-number">3</span>
+                    <span class="listed-courses-items course-name" >CSC4101 Artificial Intelligence</span>
+                    <span class="listed-courses-items credit-hours">3-0 </span>
+                    <span class="listed-courses-items tick-container"> <input class="tick" type="checkbox">
+                    </span>
+                </div>
+
+                <div  class="listed-courses">
+                    <span class="listed-courses-items course-number">4</span>
+                    <span class="listed-courses-items course-name">	CSC4724 User Interface Design</span>
+                    <span class="listed-courses-items credit-hours">3-0 </span>
+                    <span class="listed-courses-items tick-container"> <input class="tick" type="checkbox">
+                    </span>
+                </div>
+
+                <div  class="listed-courses">
+                    <span class="listed-courses-items course-number">5</span>
+                    <span class="listed-courses-items course-name">	CSC4802 Android Application Development</span>
+                    <span class="listed-courses-items credit-hours">3-0 </span>
+                    <span class="listed-courses-items tick-container"> <input class="tick" type="checkbox">
+                    </span>
+                </div>
+
+                <div  class="listed-courses">
+                    <span class="listed-courses-items course-number">6</span>
+                    <span class="listed-courses-items course-name" > CSCL3205 Lab: Computer Networks and Data Communications</span>
+                    <span class="listed-courses-items credit-hours">0-1 </span>
+                    <span class="listed-courses-items tick-container"> <input class="tick" type="checkbox" >
+                    </span>
+                </div>
+
+                <div  class="listed-courses">
+                    <span class="listed-courses-items course-number">7</span>
+                    <span class="listed-courses-items course-name">	CSCL4101 Lab: Artificial Intelligence</span>
+                    <span class="listed-courses-items credit-hours">0-1</span>
+                    <span class="listed-courses-items tick-container"> <input class="tick" type="checkbox">
+                    </span>
+                </div>
+
+                <div>
+                    <span class="fw">Reason</span>
+                    <span> <input type="text">      </span>
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="btn-container">
+                <button type="button" onclick="status_update()"> Submit</button>
+                <button id="sAll" type="button" onclick="selectAll()"> Select All</button>
+                <button type="button" onclick="deselectAll()"> Deselect All</button>
+            </div>
+
+
+
+
+        </form>
+
+
+
+        <!-- -------------------------- (end)-------------------------- -->
+
+
+        <footer>
+            <h4>Copyright © 2023 <span>ZABSolutions</span> All Rights Reserved</h4>
+        </footer>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

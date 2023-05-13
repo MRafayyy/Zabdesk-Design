@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabdesk</title>
+    <script defer src="main.js"> </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header> <img src="szabist logo new.png" alt=""> </header>
+
+
+        <div class="hamburger" onclick="change()">
+            <div class="patty"></div>
+            <div class="patty"></div>
+            <div class="patty"></div>
+        </div>
+
+        <div class="side">
+            <ul class="side-menu">
+                <li id="option-1"> <a href="../login page/index.html">Home</a></li>
+                <li id="option-2">About</li>
+                <li id="option-3">Teaching Evaluation</li>
+                <li id="option-4">EDC/Job portal </li>
+                <li id="option-5">Thesis Portal </li>
+                <li id="option-6">Contact</li>
+                <li id="option-7">Feedback</li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li id="li-1"><a href="../login page/index.html">Home</a></li>
+                <li id="li-2">About</li>
+                <li id="li-3">Teaching Evaluation</li>
+                <li id="li-4">EDC/Job portal </li>
+                <li id="li-5">Thesis Portal </li>
+                <li id="li-6">Contact</li>
+                <li id="li-7">Feedback</li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+        <section class="reset-pass-container">
+            <h3>Reset Zabdesk Password</h3>
+            <div>
+                <input id="this" class="Reg-id" type="text" placeholder="Enter Registration Id">
+                <div id="err" class=""> </div>
+            </div>
+            <button class="reg-id-submit-btn" type="button" onclick="reg_id_check()">Submit</button>
+            <h5>Powered by Zabsolutions</h5>
+
+        </section>
+
+
+        <section class="change-password-container wi0 change-password-containerll">
+
+            <div class="boxes">
+                <label for="">New Password</label>
+                <input id="password1" type="text">
+            </div>
+
+            <div class="boxes">
+                <label for="">Confirm Password</label>
+                <input id="password2" type="text">
+                <div>
+                    <ul class="error-field"> </ul>
+                </div>
+            </div>
+
+            <button class="continue" type="button" onclick="verify()">Continue</button>
+
+
+            
+            
+            
+            <div id="pop" class="wi1">
+                <h4>Password Changed Succesfully</h4>
+            </div>
+            
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <h4>Copyright © 2023 <span>ZABSolutions</span> All Rights Reserved</h4>
+        </footer>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
